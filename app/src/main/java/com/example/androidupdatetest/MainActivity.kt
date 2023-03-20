@@ -12,9 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val appUpdater = AppUpdater(this)
-            .setDisplay(Display.DIALOG)
             .setUpdateFrom(UpdateFrom.JSON)
-            .setUpdateJSON("https://raw.githubusercontent.com/javiersantos/AppUpdater/master/app/update.json")
+            .setUpdateJSON("https://raw.githubusercontent.com/drimaes-wade/AndroidAutoUpdateTest/main/app/update.json")
+            .setDisplay(Display.DIALOG)
+            .showAppUpdated(true)
             .start()
     }
 }

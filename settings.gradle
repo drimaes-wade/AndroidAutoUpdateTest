@@ -16,4 +16,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidUpdateTest"
-include ':app'
+include ':app', ':library'
